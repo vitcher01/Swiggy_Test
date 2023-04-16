@@ -18,7 +18,7 @@ public class Player {
     /*
        Adds card to players Hand
      */
-    public void addCard(Card card) {
+    public void drawCard(Card card) {
 
         cardsInHand.add(card);
     }
@@ -26,18 +26,18 @@ public class Player {
     /*
        Removes Card from players hand
      */
-    public void removeCard(Card card) {
+    public void playCard(Card card) {
         cardsInHand.remove(card);
         return;
     }
     
     // Get id of the player
-    public int giveId() {
+    public int getId() {
         return playerId;
     }
     
     // Get the cards in player's hand
-    public ArrayList<Card> giveCards() {
+    public ArrayList<Card> getCardsInHand() {
         return cardsInHand;
     }
     
