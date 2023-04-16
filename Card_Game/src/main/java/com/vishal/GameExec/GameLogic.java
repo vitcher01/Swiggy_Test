@@ -5,11 +5,9 @@ import java.util.Scanner;
 
 import com.vishal.bean.*;
 
-/* This class contains the main game logic.
-   Create an Instance of this class at the Main class'
-   main method and execute the playGame() of this class.
-   Thank you!......
- */
+/* Business Logic class
+Execute the GameLogic() through Main method.
+*/
 
 public class GameLogic {
 	private ArrayList<Card> deck;
@@ -182,7 +180,40 @@ public class GameLogic {
 				break;
 			}
 
+			/*
+			 * 11- JACK 12- QUEEN 13- KING 1- ACE
+			 */
 
+			/*
+			 * ACE card (Action card) Next player's turn will be skipped.
+			 */
+
+			if (matched == true && matchedCard == 1) {
+				playerTurn += direction;
+			}
+			/*
+			 * KING card (Action card) direction of turns in game reversed.
+			 */
+			if (matched == true && matchedCard == 13) {
+				direction *= -1;
+			}
+
+			/*
+			 * JACK card (Action card) Next player will have to draw 4 cards from the draw
+			 * pile.
+			 */
+
+			if (matched == true && matchedCard == 11) {
+				cardsToDraw = 4;
+			}
+			/*
+			 * QUEEN card (Action card) Next player will have to draw 2 cards from the draw
+			 * pile.
+			 */
+			if (matched == true && matchedCard == 12) {
+				cardsToDraw = 2;
+			}
+			
 			// Move to next player
 			playerTurn += direction;
 
