@@ -6,8 +6,13 @@ import java.util.Scanner;
 import com.vishal.bean.*;
 
 /* Business Logic class
+<<<<<<< HEAD
 Execute the GameLogic() through Main method.
 */
+=======
+   Execute the GameLogic() through Main method.
+ */
+>>>>>>> cf66aa3c7f5712e2b523da2d09bc2f3f74693e03
 
 public class GameLogic {
 	private ArrayList<Card> deck;
