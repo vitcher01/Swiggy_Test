@@ -5,10 +5,8 @@ import java.util.Scanner;
 
 import com.vishal.bean.*;
 
-/* This class contains the main game logic.
-   Create an Instance of this class at the Main class'
-   main method and execute the playGame() of this class.
-   Thank you!......
+/* Business Logic class
+   Execute the GameLogic() through Main method.
  */
 
 public class GameLogic {
