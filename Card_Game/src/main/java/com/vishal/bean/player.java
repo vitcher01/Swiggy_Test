@@ -2,15 +2,15 @@ package com.vishal.bean;
 
 import java.util.*;
 
-public class player {
+public class Player {
 	
 	//Id of the Player
     private int playerId;
     
     // cards in the hand of the player.
-    private ArrayList<card> cardsInHand = new ArrayList<card>();
+    private ArrayList<Card> cardsInHand = new ArrayList<Card>();
 
-    public player(int playerId)
+    public Player(int playerId)
     {
         this.playerId = playerId;
     }
@@ -18,7 +18,7 @@ public class player {
     /*
        Adds card to players Hand
      */
-    public void addCard(card card) {
+    public void addCard(Card card) {
 
         cardsInHand.add(card);
     }
@@ -26,7 +26,7 @@ public class player {
     /*
        Removes Card from players hand
      */
-    public void removeCard(card card) {
+    public void removeCard(Card card) {
         cardsInHand.remove(card);
         return;
     }
@@ -37,7 +37,7 @@ public class player {
     }
     
     // Get the cards in player's hand
-    public ArrayList<card> giveCards() {
+    public ArrayList<Card> giveCards() {
         return cardsInHand;
     }
     

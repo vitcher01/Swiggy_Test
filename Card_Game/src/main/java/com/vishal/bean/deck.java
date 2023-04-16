@@ -1,5 +1,5 @@
 package com.vishal.bean;
 
-public class deck {
+public class Deck {
 
 }
